@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include 'kernal.h'
 
 // 一维线性元基函数
 // x是自变量，xBoundary是对应区间边界
