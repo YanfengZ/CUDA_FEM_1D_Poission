@@ -6,7 +6,7 @@ __global__
 // 并行实现矩阵组装
 // 通过索引线程号决定如何计算
 __device__
-void MatrixAssemble(double[] matrixA, double[] vectorB, int N) {
+void MatrixAssemble(double* matrixA, double* vectorB, int N) {
     cudaMalloc(&d_matrixA, N*N*sizeof(double));
     cudaMalloc(&d_vectorB, N*sizeof(double));
     const int threadIndexX = threadIdx.x + blockIdx.x * blockDim.x;

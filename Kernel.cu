@@ -2,12 +2,10 @@
 #include <stdlib.h>
 #include 'kernal.h'
 
-__global__
-
-__device__
-
 int main(int args,char** argv) {
-
+    double [N][N] matrixA;
+    double [N] vectorB;
+    MatrixAssemble<<<>>>    
     equationAnswer = LTSolver(matrixA, vectorB);
     return 0;
 }
