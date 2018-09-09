@@ -12,7 +12,7 @@ void MatrixAssemble(double[] matrixA, double[] vectorB, int N) {
     const int threadIndexX = threadIdx.x + blockIdx.x * blockDim.x;
     const int threadIndexY = threadIdx.y + blockIdx.y * blockDim.y;
     if(blablabla) {
-        d_matrixA[] = GaussIntegral();
-        d_vectorB[] = GaussIntegral();
+        d_matrixA[] = GaussIntegral(&LeftFunction, &der_1_Basis1, &der_1_Basis2, GaussInterval);
+        d_vectorB[] = GaussIntegral(&RightFunction, &Basis1, &Basis2, GaussInterval);
     }
 }
